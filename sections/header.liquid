@@ -172,7 +172,9 @@
             }}
           </div>
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <div class="header__heading-logo-wrapper">
+            {{ 'nexostore-logo.png' | asset_img_url: '460x' | image_tag: class: 'header__heading-logo motion-reduce', width: 230, alt: shop.name | escape, preload: true }}
+          </div>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -215,7 +217,9 @@
             }}
           </div>
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <div class="header__heading-logo-wrapper">
+            {{ 'nexostore-logo.png' | asset_img_url: '460x' | image_tag: class: 'header__heading-logo', width: 230, alt: shop.name | escape, preload: true }}
+          </div>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
