@@ -1,0 +1,4 @@
+[environments]
+  [environments.production]
+    store = "g0rdgc-id.myshopify.com"
+    theme = "main"
